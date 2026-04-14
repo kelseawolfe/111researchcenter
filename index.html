@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The OneEleven Initiative | A Blueprint for Co-Creative Leadership</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --oxford-blue: #141f2f;
+            --alabaster: #f9f8f4;
+            --gold: #c5a059;
+            --slate: #4a5568;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--alabaster);
+            color: var(--oxford-blue);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, .serif {
+            font-family: 'EB Garamond', serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--oxford-blue);
+            background-image: linear-gradient(rgba(20, 31, 47, 0.8), rgba(20, 31, 47, 0.8)), 
+                              url('https://images.unsplash.com/photo-1519750783826-e2420f4d687f?auto=format&fit=crop&q=80'); /* Smoke/Tehom placeholder */
+            background-size: cover;
+            background-position: center;
+            color: var(--alabaster);
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--gold);
+        }
+
+        .header-logo { font-size: 2.5rem; color: var(--gold); margin-bottom: 1rem; }
+
+        .hero h1 { font-size: 3.5rem; margin-bottom: 0.5rem; letter-spacing: 1px; }
+        .hero p.tagline { font-style: italic; font-size: 1.5rem; color: var(--gold); margin-bottom: 2rem; }
+        .hero .manifesto-text { max-width: 800px; margin: 0 auto; font-size: 1.1rem; opacity: 0.9; }
+
+        /* Pillars Section */
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: -50px auto 60px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 40px;
+            border-bottom: 3px solid transparent;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+        .card p { font-size: 0.95rem; color: var(--slate); margin-bottom: 1.5rem; }
+
+        .btn-text {
+            color: var(--oxford-blue);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+            border-bottom: 1px solid var(--gold);
+        }
+
+        /* Inquiry Section */
+        .inquiry {
+            background-color: var(--alabaster);
+            padding: 80px 20px;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .inquiry-container { max-width: 700px; margin: 0 auto; }
+        .inquiry h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .inquiry p { margin-bottom: 2rem; color: var(--slate); }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            text-align: left;
+        }
+
+        .full-width { grid-column: span 2; }
+
+        input, select, textarea {
+            padding: 12px;
+            border: 1px solid #cbd5e0;
+            background: var(--white);
+            font-family: inherit;
+            width: 100%;
+        }
+
+        textarea { height: 100px; resize: none; }
+
+        .submit-btn {
+            grid-column: span 2;
+            background: var(--oxford-blue);
+            color: var(--white);
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: background 0.3s;
+            margin-top: 1rem;
+        }
+
+        .submit-btn:hover { background: var(--gold); }
+
+        footer {
+            padding: 40px;
+            background: #101827;
+            color: #718096;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        footer a { color: var(--gold); text-decoration: none; margin: 0 10px; }
+
+        @media (max-width: 768px) {
+            form { grid-template-columns: 1fr; }
+            .full-width { grid-column: span 1; }
+            .submit-btn { grid-column: span 1; }
+            .hero h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="header-logo serif">111</div>
+        <h1>The OneEleven Initiative</h1>
+        <p class="tagline serif">A Blueprint for Co-Creative Leadership</p>
+        <div class="manifesto-text">
+            <p>"Order is not the absence of chaos; it is the presence of function. We provide the architectural framework for leaders to move their environments from 'formless and void' to spaces where human flourishing is the natural output."</p>
+        </div>
+    </section>
+
+    <section class="pillars">
+        <div class="card">
+            <h3>The Library</h3>
+            <p>A topical archive of research and resources bridging the gap between ancient wisdom and professional practice.</p>
+            <a href="#" class="btn-text">[Open Archive]</a>
+        </div>
+        <div class="card">
+            <h3>The Cohorts</h3>
+            <p>8-week intensives designed to help you architect life-giving order within your specific domain.</p>
+            <a href="#" class="btn-text">[Inquire Now]</a>
+        </div>
+        <div class="card">
+            <h3>The Consultancy</h3>
+            <p>Strategic stewardship and high-level coaching for organizations ready to implement the OneEleven logic.</p>
+            <a href="#" class="btn-text">[Learn More]</a>
+        </div>
+    </section>
+
+    <section class="inquiry">
+        <div class="inquiry-container">
+            <h2>Cultivate Life-Giving Order in Your Work</h2>
+            <p>Share a few details about your leadership context to see if our cohorts or resources are a fit for your journey.</p>
+            
+            <form action="#" method="POST">
+                <input type="text" placeholder="Name & Contact (LinkedIn/Email)" required>
+                <select required>
+                    <option value="" disabled selected>Sphere of Influence</option>
+                    <option value="business">Business / Corporate</option>
+                    <option value="education">Education</option>
+                    <option value="nonprofit">Non-Profit</option>
+                    <option value="arts">The Arts</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea class="full-width" placeholder="The Nature of the Chaos: Describe the primary challenge or 'non-functional' state you are looking to address..."></textarea>
+                <button type="submit" class="submit-btn">Connect with us</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>OneEleven Research Center &copy; 2026 | <a href="#">Skool Community</a> | <a href="#">Donate</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
